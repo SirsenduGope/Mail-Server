@@ -9,7 +9,7 @@ const BrowserWindow = electron.BrowserWindow;
 var mainWindow;
 
 app.on('ready',function(){
-	mainWindow = new BrowserWindow({width:500, height:650, maximizable: false, resizable: false});
+	mainWindow = new BrowserWindow({width:500, height:500, maximizable: false, resizable: false});
 	mainWindow.setMenu(null);
 	
 	mainWindow.loadURL(url.format({
