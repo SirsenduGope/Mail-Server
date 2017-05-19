@@ -1,0 +1,14 @@
+{
+  "name": "mail_server",
+  "version": "1.0.0",
+  "description": "Send instant mail from your desktop application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Sirsendu_Gope",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

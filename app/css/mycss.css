@@ -1,0 +1,31 @@
+body{
+	
+	background-image: url("../img/login_background.jpg");
+	background-position: center center;
+}
+
+form{
+	padding: 20px;
+}
+
+@keyframes fade{
+	from { opacity: 0}
+	to {opacity: 1}
+}
+
+h4{
+	text-align: center;
+	font-family: times;
+	animation-name : fade;
+	animation-duration : 2s;
+	color: green;
+}
+
+#button{
+	margin-top: 10px;
+	text-align: right;
+}
+
+textarea.materialize-textarea{
+	min-height: 15rem;
+}
