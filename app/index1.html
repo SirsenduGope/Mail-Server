@@ -6,27 +6,33 @@
 		<title>Compose</title>
 	</head>
 	<body>
-		<form>
+		<form name="mail" onsubmit="return validation();">
 		  <div class="form-group">
-		    <input type="email" class="form-control" placeholder="To">
+		    <input type="email" id="reciver" class="form-control" placeholder="To">
+		    <span id="reciver_err">Recever id is required</span>
 		  </div>
 
 		  <div class="form-group">
-		    <input type="email" class="form-control" placeholder="From">
+		    <input type="email" id="sender" class="form-control" placeholder="From">
+		    <span id="sender_err">Sender id is required</span>
 		  </div>
 
 		  <div class="form-group">
-		    <input type="text" class="form-control" placeholder="Subject">
+		    <input type="text" id="subject" class="form-control" placeholder="Subject">
+		    <span id="subject_err">Subject is required</span>
 		  </div>
 		
 		  <div class="form-group">
-		    <textarea class="form-control" rows="14" placeholder="Description"></textarea>
+		    <textarea class="form-control" id="desc" rows="14" placeholder="Description"></textarea>
+		    <span id="description_err">Messege is required</span>
 		  </div>
 
 		  <div class="icons">
-		  	<button class="btn btn-large btn-primary"><span class="icon icon-paper-plane" style="color:white" align="cneter"></span></button>
+		  	<button class="btn btn-large btn-primary"><span class="icon icon-paper-plane" style="color:white; visibility: visible" align="cneter"></span></button>
 		  </div>
 		  
 		</form>
+
+		<script type="text/javascript" src="js/validation.js"></script>
 	</body>
 </html>
